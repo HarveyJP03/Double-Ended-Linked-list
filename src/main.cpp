@@ -37,6 +37,7 @@ void main() /** Entry point for the application */
 	// Remove the last element in the list
 	
 	cout << "Back node is: " << myLinkedList.getBack() << endl; //LOOK AT BACK ELEMENT IN LIST
+	cout << "Popping data from back of list... " << endl;
 	myLinkedList.popFromBack(); //POP FROM BACK OF LIST
 	cout << "New back node is: " << myLinkedList.getBack() << endl << endl;
 
@@ -44,6 +45,7 @@ void main() /** Entry point for the application */
 	// Remove the first element in the list
 	
 	cout << "Front node is: " << myLinkedList.getFront() << endl; //LOOK AT FRONT ELEMENT IN LIST
+	cout << "Popping data from front of list... " << endl;
 	myLinkedList.popFromFront(); //POP FROM FRONT OF LIST
 	cout << "New front node is: " << myLinkedList.getFront() << endl << endl;
 
@@ -52,8 +54,10 @@ void main() /** Entry point for the application */
 	
 	cout << "Current Node is: " << myLinkedList.getCurrent() << endl; //LOOK AT CURRENT ELEMENT IN LIST
 	myLinkedList.traverseForwards(); //MOVE CURRENT POINTER FORWARDS IN LIST
+	cout << "Moving current node pointer forwards..." << endl;
 	
 	cout << "New Current Node is: " << myLinkedList.getCurrent() << endl;
+	cout << "Moving current node pointer backwards twice..." << endl;
 	myLinkedList.traverseBackwards(); //MOVE CURRENT POINTER BACKWARDS IN LIST x2
 	myLinkedList.traverseBackwards();
 	
@@ -63,6 +67,7 @@ void main() /** Entry point for the application */
 	//Give the number of elements in the list
 	
 	cout << "List size is: " << myLinkedList.getSize() << endl;
+	cout << "Pushing 'Z' in front of the current node... " << endl;
 	myLinkedList.pushInFrontOfCurrent('Z');
 	cout << "List size after pushing is: " << myLinkedList.getSize() << endl << endl;
 
